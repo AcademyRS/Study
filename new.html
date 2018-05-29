@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Study Life</title>
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="navbar-brand"><img src="pict/icon.png" style="width:100%" alt="logo"></a>
+        <a href="index.html">Página Inicial</a>
+        <a href="discipline.html">Disciplinas</a>
+        <a href="performance.html">Desempenho</a>
+        <a href="task.html">Tarefas</a>
+        <a href="hora.html">Horários</a>
+        <a href="material.html">Material</a> 
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+    <a href="discipline.html"><img src="pict/arrow.png"id="arrow" alt="seta"></a>
+    <div class="container">
+        <div id="BoxForm">
+            <form id="form">
+                <ul>                      
+                    <li>
+                        <label>Disciplina:</label>
+                        <input type="text" class="disc" required/>
+                    </li>
+                    <li>
+                        <label>Professor(a):</label>
+                        <input type="text" class="disc" required/>
+                    </li>
+                    <li>
+                        <label>Sala do Professor(a):</label>
+                        <input type="text" class="disc">
+                    </li>
+                    <li><button id="btn">Adicionar</button></li>
+                </ul>
+            </form>
+        </div>
+    </div>
+    <script>
+        document.querySelector('body').onload = function () {
+            document.querySelector('#arrow').classList.add('arrow');
+        }
+
+    </script>
+    <script async src="js/nav.js"></script>
+</body>
+</html>

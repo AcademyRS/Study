@@ -212,65 +212,6 @@ img.logo{width: 100%;}
 @media screen and (max-width: 600px) {
     .column {width: 50%;}
 }
-
-/* Progresso */
-.pieContainer {
-    height: 100px;
-    padding-left: 50%;
-}
-.pieBackground {
-    background-color: #084B60;
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    -moz-border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -o-border-radius: 50px;
-    border-radius: 50px;
-    -moz-box-shadow: -1px 1px 3px #000;
-    -webkit-box-shadow: -1px 1px 3px #000;
-    -o-box-shadow: -1px 1px 3px #000;
-    box-shadow: -1px 1px 3px #000;
-}
-.pie {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    -moz-border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -o-border-radius: 50px;
-    border-radius: 50px;
-    clip: rect(0px, 50px, 100px, 0px);
-}
-.hold {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    -moz-border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -o-border-radius: 50px;
-    border-radius: 50px;
-    clip: rect(0px, 100px, 100px, 50px);
-}
-#pieSlice1 .pie {
-    background-color: #81BEF7;
-    -webkit-transform:rotate(70deg);
-    -moz-transform:rotate(70deg);
-    -o-transform:rotate(70deg);
-    transform:rotate(70deg);
-} 
-#myProgress {
-    width: 100%;
-    background-color: #81BEF7;
-  }
-#myBar {
-    width: 83%;
-    height: 30px;
-    background-color: #084B60;
-    text-align: center;
-    line-height: 30px;
-    color: white;
-}
  /* desempenho */
 
  .tit {
@@ -293,16 +234,121 @@ img.logo{width: 100%;}
 }
 
 /* tarefas */
-.tar {
-    width: 450px;
-    height: 100px;
-    border-style: solid;
-    border-collapse: collapse;
-    border-width: 0.25px;
-    border-color: white;
-    text-align: right;
-    background-color: lightgray;
-    padding: 20px;
+h2#head{text-align: center;}
+button#icone_mais{
+    width: 5vw;
+    height: 5vw;
+    border: none;
+    background: url('../pict/icone_mais.png');
+    background-repeat: no-repeat;
+    transition: all 0.8s;
+    background-size: 100%;  
+    position: relative;
+    margin-top: 50px;
+    left: 89.5vw;
+}
+div.generation{
+    position: absolute;
+    width: 80%;
+    top: 25%;
+    left: -100%;
+    transition: all 0.9s;
+    background: rgb(236, 236, 236);
+    box-shadow: 0px 0px 90px white;
+    border-radius: 10px;
+}
+div.generation p,input{margin: 0px;text-align: center;}
+div.generation input{background: white;width: 80%;margin-left: 10%;}
+button.ready, button.deny{margin: 0px;margin-top: 15px;width: 25%;height: 6vw;color: white; margin-bottom: 10px;font-size: 30px;}
+button.ready {margin-left: 25%;background: green;border-radius: 8px;text-align: center;}
+button.deny{background: rgb(150, 0, 0);border-radius: 8px;color: white;}
+p.warning{color: red;font-size: 15px;}
+div.body{width: 90%;margin-left: 5%;transition: all 0.8s;}
+ul.job{padding: 0px;margin: 0px;font-size: 4vw;color: grey;
+    width: 100%;
+    transition: 0.3s;
+    height: 15vw;
+}
+p.name_job{
+    max-width: 40%;
+    height: 100%;
+    transform: translateY(30%); 
+    margin: 0px;
+    margin-right: 5%;
+}
+button.description_job{
+    background: url('../pict/icone_vermais.png');
+    border: none;
+    background-size: 100%;  
+    width: 6vw;
+    background-repeat: no-repeat;
+    height: 6vw;
+    float: right;
+    right: -56%;
+    outline: none;
+    margin-right: 5px;
+    position: relative;
+    top: -70%;
+}
+div.second_job{
+    width: 55%;
+    height: 100%;
+    font-size: 3vw;
+    position: relative;
+    right: 6vw;
+    transform: translateY(20%); 
+    top: -100%;
+    float: right;
+}
+p.date_job{
+    margin: 0px;
+    text-align: center;
+}
+p.matter_job{
+    margin: 0px;
+    text-align: center
+}
+p.name_job{ 
+    color: black;
+}
+p.description_job{
+    width: 80%;
+    max-height: 100px;
+    overflow: auto;
+    font-size: 2vw;
+    display: none;
+    position: relative;
+    top: -100%;
+    margin: 0px;
+    margin-left: 10%;
+}
+button.delete{
+    width: 5vw;
+    height: 5vw;
+    border: none;
+    background: url('../pict/icone_lixo.png');
+    background-repeat: no-repeat;
+    transition: all 0.8s;
+    background-size: 100%;  
+    position: relative;
+    left: 95%;
+    margin-top: 30px;
+    transform: translateX(70%);
+    display: none;
+}
+@media (max-width: 1000px){
+    button.ready,button.deny{margin: 0px;margin-top: 15px;width: 20%;height: 6vw;font-size: 25px;margin-bottom: 10px;}
+    button.ready {margin-left: 30%;}
+}
+@media (max-width: 770px){
+    button#icone_mais{width: 5vh;height: 5vh;}
+    button.ready,button.deny{margin: 0px;margin-top: 15px;width: 15%;height: 6vw;font-size: 20px;margin-bottom: 10px;}
+    button.ready {margin-left: 35%;}
+}
+@media (max-width: 575px){
+    button.ready,button.deny{margin: 0px;margin-top: 15px;width: 20%;height: 8vw;font-size: 20px;margin-bottom: 10px;font-size: 13px}
+    button.ready {margin-left: 30%;}
+    p.description_job{font-size: 3vw;}
 }
 
 /* galeria */
@@ -345,13 +391,6 @@ img.logo{width: 100%;}
 @media screen and (max-width: 600px) {
     .column3 {width: 50%;}
 }
-#btn {
-    padding: 10px;
-    margin-top: 5px;
-    color: white;
-    text-decoration: none;
-    background-color:#084B60;
-}
 #upload {
     padding: 10px;
     color: white;
@@ -369,8 +408,58 @@ img.logo{width: 100%;}
     height:220px;
 }
 .discipline {margin: 0 5px 0 5px;}
-.disc {
-    padding: 5px;
-    background-color: #d9d9d9;
-}
 #title {text-align: center;}
+.container {
+    margin: auto;
+    height: 80%;
+}
+#BoxForm {
+    float: right;
+    max-width: 300px;
+    margin: 20px;     
+    padding: 10px 0 20px 10px;  
+    background:#fff;    
+    border: 1px solid #dcdcdc;
+}    
+#form ul li {
+    margin: 0px 0;
+    list-style: none;
+    position: relative;
+    clear: both;
+}
+#form label {  
+    margin: 0px 0;     
+    line-height: 45px;
+    text-align: left;     
+    float: left;     
+    color: #666;
+    font-size: 18px; 
+}
+.disc {     
+    padding: 5px;     
+    border: 1px solid #CCCCCC;     
+    background:#fcfcfc;     
+    border-radius: 5px;
+    font-size: 16px;
+}
+#btn {     
+    width: 120px;     
+    height: 50px; 
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;     
+    color:#f6f6f6;     
+    background:#084B60;     
+    border: 1px solid #ccc; 
+}
+.arrow {
+    margin-left: 10px;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+    transition: transform .3s linear;
+    -moz-transition: transform .3s linear;
+    -o-transition: transform .3s linear;
+    -webkit-transition: transform .3s linear;
+}

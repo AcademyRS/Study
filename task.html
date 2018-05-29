@@ -22,27 +22,23 @@
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         </div>
         <!--corpo da home-->
-        <div>
-            <h2>Minha galeria</h2>
-            <div class="row2">
-                <div class="column2">
-                        <img src="pict/img.jpg" class="img">
-                </div>
-                <div class="column2">
-                        <img src="pict/img.jpg" class="img">
-                </div>
-                <div class="column2">
-                        <img src="pict/img.jpg" class="img">
-                </div>
-                <div class="column2">
-                        <img src="pict/img.jpg" class="img">
-                </div>
-            </div>
-            <br>
-            <a href="#" id="btn">Excluir</a>
-            <a href="#" id="upload">Upload</a>
+        <h2 id="head">Suas tarefas</h2>
+        <div class="body"></div>
+        <div class="generation">
+            <p class="name">Nome da tarefa</p>
+            <input class="name" type="text"><br>
+            <p class="date">Data</p>
+            <input class="date" type="date"><br>
+            <p class="matter">Nome da matéria</p>
+            <input class="matter" type="text"><br>
+            <p class="description">Descrição da tarefa</p>
+            <input class="description"></input>
+            <button class="ready">Aceitar</button>
+            <button class="deny">Voltar</button><br>
         </div>
+        <button id="icone_mais"></button>
     </div>
     <script async src="js/nav.js"></script>
+    <script async src="js/task.js"></script>
 </body>
 </html>
