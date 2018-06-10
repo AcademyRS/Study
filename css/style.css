@@ -4,7 +4,7 @@ html, body{margin: 0;padding: 0;font-family: "Segoe UI",Arial,sans-serif;}
 /* Inicio navbar */
 .topnav {
     overflow: hidden;
-    background-color: #084B60;
+    background-color: #0AB67E;
     box-shadow: 0 5px 8px rgba(0,0,0,0.4);
     -webkit-box-shadow: 0 5px 8px rgba(0,0,0,0.4);
     -moz-box-shadow: 0 5px 8px rgba(0,0,0,0.4);
@@ -25,7 +25,7 @@ html, body{margin: 0;padding: 0;font-family: "Segoe UI",Arial,sans-serif;}
 }
 .active {
     pointer-events:none;
-    background-color: rgba(8, 75, 96, 0.75);
+    background-color: #0AB67E;
     color: white;
 }
 .topnav .icon {
@@ -161,7 +161,7 @@ img.logo{width: 100%;}
 .c1{background-color:lightgray;width:100%;text-align:left;height:120px;}
 .c2{background-color:lightgray;width:100%;text-align:left;height:60px;}
 .topnav a:hover, .dropdown:hover .dropbtn {
-    background-color: #084B60;
+    background-color: #0AB67E;
     color: white;
 }
 .navbar-brand {
@@ -169,7 +169,7 @@ img.logo{width: 100%;}
 	margin-top: 0px;
     max-width: 77px;
     max-height: 55px;
-	background-color: #084B60;
+	background-color: #0AB67E;
 }   
 
 .dropdown-content a:hover {
@@ -197,7 +197,7 @@ img.logo{width: 100%;}
 /* Clear floats after the columns */
 .column {
     color: black;
-    background-color: #81BEF7; 
+    background-color: #28D79E; 
     border-width: 5px;
     border: solid white;
     float: left;
@@ -449,7 +449,7 @@ button.delete{
     margin-top: 10px;
     font-size: 16px;     
     color:#f6f6f6;     
-    background:#084B60;     
+    background:#0AB67E;     
     border: 1px solid #ccc; 
 }
 .arrow {

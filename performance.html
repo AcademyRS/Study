@@ -1,73 +1,106 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/graphic.css">
-    <title>Study Life</title>
-</head>
-<body>
-    <div>
-        <!--navbar-->
-        <div class="topnav" id="myTopnav">
-            <a href="index.html" class="navbar-brand"><img src="pict/icon.png" style="width:100%" alt="logo"></a>
-            <a href="index.html">Página Inicial</a>
-            <a href="discipline.html">Disciplinas</a>
-            <a href="performance.html">Desempenho</a>
-            <a href="task.html">Tarefas</a>
-            <a href="hora.html">Horários</a>
-            <a href="material.html">Material</a> 
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-        </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/performance.css">
+        <title>Study Life</title>
+    </head>
+    <body>
+        <!--Header-->
         <div>
-            <h2>Matérias cadastradas</h2>
-            <h3>4</h3><br>
-            <h2>Frequência global</h2><br>
-            <div class="container">
+            <!--navbar-->
+            <div class="topnav" id="myTopnav">
+                <a href="index.html" class="navbar-brand"><img src="pict/icon.png" style="width:100%" alt="logo"></a>
+                <a href="index.html">Página Inicial</a>
+                <a href="discipline.html">Disciplinas</a>
+                <a href="performance.html">Desempenho</a>
+                <a href="task.html">Tarefas</a>
+                <a href="hora.html">Horários</a>
+                <a href="material.html">Material</a> 
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+        </div>
+        <!--Body-->
+        <div class="container">
+            <h2>Frequencia Global</h2>
+            <!--Graphic-->
+            <div class="graphic-container">
                 <div class="graphic-background"></div>
                 <div id="graphic-slice" class="slicediv">
                     <div class="slice"></div>
                 </div>
                 <div class="graphic-over"></div>
-                <h1 id="percentage">41%</h1>
+                <h1 id="percentage">100%</h1>
             </div>
-            <br>
-            <!--Progresso-->
-            <h2>Desempenho</h2>
-            <table class="desempenho">
+            <!--Tabela-->
+            <h2 id="h2-frequenc">Tabela de Frequencia</h2>
+            <table id="table-frequenc" class="performance-table">
                 <thead>
-                    <tr>
-                        <td class="tit">Matéria</td>
-                        <td class="tit">Nota</td>
-                        <td class="tit">Frequência</td>
+                    <tr class="tr-head">
+                        <th class="th-name">Materias</th>
+                        <th>1B</th>
+                        <th>2B</th>
+                        <th>3B</th>
+                        <th>4B</th>
                     </tr>
                 </thead>
+                <tbody>
                     <tr>
-                        <td class="cont">Matemática 3</td>
-                        <td class="cont">7.4</td>
-                        <td class="cont">74%</td>
+                        <td class="td-name">Logica</td>
+                        <td>20/20</td>
+                        <td>20/20</td>
+                        <td>20/20</td>
+                        <td></td>
                     </tr>
                     <tr>
-                        <td class="cont">Engenharia de Software</td>
-                        <td class="cont">8.2</td>
-                        <td class="cont">82%</td>
+                        <td class="td-name">DBO</td>
+                        <td>20/20</td>
+                        <td>20/20</td>
+                        <td>20/20</td>
+                        <td></td>
                     </tr>
                     <tr>
-                        <td class="cont">Física 4</td>
-                        <td class="cont">3.7</td>
-                        <td class="cont">37%</td>
+                        <td class="td-name">ES</td>
+                        <td>20/20</td>
+                        <td>20/20</td>
+                        <td>20/20</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2 id="h2-grade">Tabela de Notas</h2>
+            <table id="table-grade" class="performance-table">
+                <thead>
+                    <tr class="tr-head">
+                        <th class="th-name">Materias</th>
+                        <th>1B</th>
+                        <th>2B</th>
+                        <th>3B</th>
+                        <th>4B</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="td-name">Logica</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>7</td>
+                        <td>1</td>
                     </tr>
                     <tr>
-                        <td class="cont">Banco de Dados</td>
-                        <td class="cont">6.5</td>
-                        <td class="cont">65%</td>
+                        <td class="td-name">DBO</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>9.5</td>
+                        <td>1</td>
                     </tr>
                 </tbody>
             </table>
         </div>
-    </div>  
-    <script async src="js/nav.js"></script>
-</body>
+        <script async src="js/nav.js"></script>
+        <script async src="js/performance.js"></script>
+    </body>
 </html>
