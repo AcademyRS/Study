@@ -1,0 +1,26 @@
+#BoxForm {
+    z-index: 3;
+    position: absolute;
+    float: none;
+    transition: all 400ms linear;
+    transform: translate(-120%, 0);
+}
+#BoxForm.open{
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .5);
+    transition: all 400ms linear;
+    transform: translate(0%, 0);
+}
+.btnadd {text-align: center;margin-top: 10px;}
+#add {
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    outline: none;
+}
+#opac {
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    position: absolute;
+    top: 0;
+}
+.discipline {margin: 0 15px 0 15px;}
