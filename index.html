@@ -9,60 +9,44 @@
         <title>Study Life</title>
     </head>
     <body>
-        <div>
-            <!--navbar-->
-            <div class="topnav" id="myTopnav">
-                <a href="index.html" class="navbar-brand"><img src="pict/icon.png" style="width:100%" alt="logo"></a>
-                <a href="index.html">Página Inicial</a>
-                <a href="discipline.html">Disciplinas</a>
-                <a href="performance.html">Desempenho</a>
-                <a href="task.html">Tarefas</a>
-                <a href="hora.html">Horários</a>
-                <a href="material.html">Material</a> 
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        <!--Navbar-->
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="navbar-brand">
+                <img src="pict/icon.png" style="width:100%" alt="logo">
+            </a>
+            <a href="javascript:void(0);" class="icon" onclick="opennavbar()">&#9776;</a>
+        </div>
+        <div class="navbar" id="navbar">
+            <a href="index.html">Página Inicial</a>
+            <a href="discipline.html">Disciplinas</a>
+            <a href="performance.html">Desempenho</a>
+            <a href="task.html">Tarefas</a>
+            <a href="hora.html">Horários</a>
+            <a href="material.html">Material</a>
+            <div id="navbar-close-div" onclick="closenavbar()"></div>
+        </div>
+        <!--body-->
+        <div class="container-home">
+            <div id="discipline">
+                <img src="pict/discipline-icon.svg" alt="Icone Disciplinas">
+                <h3>Disciplinas</h3>
             </div>
-            <!--corpo da home-->
-            <div>
-                <br><br>
-                <div class="row">
-                    <a href="materias.html"><div class="column">
-                        <h2>Minhas matérias</h2>
-                        <p>Veja aqui suas matérias</p>
-                    </div></a>
-                    <a href="progresso.html"><div class="column">
-                        <h2>Meu progresso</h2>
-                        <p>Não perca seu desempenho, consulte seu progresso</p>
-                    </div></a>
-                    <a href="tarefas.html"><div class="column">
-                        <h2>Tarefas</h2>
-                        <p>Perdido nos trabalhos? Aqui você não se perde</p>
-                    </div></a>
-                    <a href="hora.html"><div class="column">
-                        <h2>Horários</h2>
-                        <p>Não leve mais o caderno errado, consulte seu horário</p>
-                    </div></a>
-                </div>
-            <div>
-                <div class="ultcomun"><a href="material.html"><div class="column">
-                        <h2>Galeria</h2>
-                        <p>Salve aqui as fotos de matérias e anotações</p>
-                    </div></a></div>
-                    <br><br>
+            <div id="performance">
+                <img src="pict/performance-icon.png" alt="Icone Desempenho">
+                <h3>Desempenho</h3>
+            </div>
+            <div id="task">
+                <img src="pict/task-icon.png" alt="Icone Tarefas">
+                <h3>Tarefas</h3>
+            </div>
+            <div id="hora">
+                <img src="pict/hora-icon.png" alt="Icone Horarios">
+                <h3>Horários</h3>
+            </div>
+            <div id="material">
+                <img src="pict/material-icon.png" alt="Icone Material">
+                <h3>Material</h3>
             </div>
         </div>
-        </div>
-        <script async src="js/nav.js"></script>
-        <!-- <script>if (navigator.serviceWorker.controller) {
-                console.log('[PWA Builder] active service worker found, no need to register')
-            } else {
-                navigator.serviceWorker.register('sw.js', {
-                    scope: './'
-                }).then(function(reg) {
-                    console.log('Service worker has been registered for scope:'+ reg.scope);
-                });
-            }
-            var elem = document.querySelector('.dropdown-trigger');
-            var instance = M.Dropdown.init(elem, options);
-        </script> -->
     </body>
 </html>

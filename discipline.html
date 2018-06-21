@@ -9,48 +9,52 @@
     <title>Study Life</title>
 </head>
 <body>
-    <div>
-        <div class="topnav" id="myTopnav">
-            <a href="index.html" class="navbar-brand"><img src="pict/icon.png" style="width:100%" alt="logo"></a>
-            <a href="index.html">Página Inicial</a>
-            <a href="discipline.html">Disciplinas</a>
-            <a href="performance.html">Desempenho</a>
-            <a href="task.html">Tarefas</a>
-            <a href="hora.html">Horários</a>
-            <a href="material.html">Material</a> 
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-        </div>
-        <h2 id="title">Minhas disciplinas</h2><br>
-        <div class="container">
-            <div id="BoxForm">
-                <form id="form">
-                    <ul>                      
-                        <li>
-                            <label>Disciplina:</label>
-                            <input type="text" class="disc" name="discipline" required/>
-                        </li>
-                        <li>
-                            <label>Professor(a):</label>
-                            <input type="text" class="disc" name="prof" required/>
-                        </li>
-                        <li>
-                            <label>Sala:</label>
-                            <input type="number" class="disc" name="sala">
-                        </li>
-                        <li><button id="btn">Adicionar</button></li>
-                    </ul>
-                </form>
-            </div>
-        </div>
-        <div class="discipline">
-            <div class="disc">
-                <h3>Matemática 3</h3>
-                <p>Prof: Aline Macedo</p>
-                <p>Sala: 408</p>
-            </div>
-        </div>
-        <div class="btnadd"><button id="add">Adicionar matéria</button></div>
+    <!--Navbar-->
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="navbar-brand">
+            <img src="pict/icon.png" style="width:100%" alt="logo">
+        </a>
+        <a href="javascript:void(0);" class="icon" onclick="opennavbar()">&#9776;</a>
     </div>
+    <div class="navbar" id="navbar">
+        <a href="index.html">Página Inicial</a>
+        <a href="discipline.html">Disciplinas</a>
+        <a href="performance.html">Desempenho</a>
+        <a href="task.html">Tarefas</a>
+        <a href="hora.html">Horários</a>
+        <a href="material.html">Material</a>
+        <div id="navbar-close-div" onclick="closenavbar()"></div>
+    </div>
+    <h2 id="title">Minhas disciplinas</h2><br>
+    <div class="container">
+        <div id="BoxForm">
+            <form id="form">
+                <ul>                      
+                    <li>
+                        <label>Disciplina:</label>
+                        <input type="text" class="disc" name="discipline" required/>
+                    </li>
+                    <li>
+                        <label>Professor(a):</label>
+                        <input type="text" class="disc" name="prof" required/>
+                    </li>
+                    <li>
+                        <label>Sala:</label>
+                        <input type="number" class="disc" name="sala">
+                    </li>
+                    <li><button id="btn">Adicionar</button></li>
+                </ul>
+            </form>
+        </div>
+    </div>
+    <div class="discipline">
+        <div class="disc">
+            <h3>Matemática 3</h3>
+            <p>Prof: Aline Macedo</p>
+            <p>Sala: 408</p>
+        </div>
+    </div>
+    <div class="btnadd"><button id="add">Adicionar matéria</button></div>
     <script src="js/disc.js"></script>
     <script async src="js/nav.js"></script>
 </body>

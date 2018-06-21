@@ -9,39 +9,42 @@
     <title>Study Life</title>
 </head>
 <body>
+    <!--Navbar-->
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="navbar-brand">
+            <img src="pict/icon.png" style="width:100%" alt="logo">
+        </a>
+        <a href="javascript:void(0);" class="icon" onclick="opennavbar()">&#9776;</a>
+    </div>
+    <div class="navbar" id="navbar">
+        <a href="index.html">Página Inicial</a>
+        <a href="discipline.html">Disciplinas</a>
+        <a href="performance.html">Desempenho</a>
+        <a href="task.html">Tarefas</a>
+        <a href="hora.html">Horários</a>
+        <a href="material.html">Material</a>
+        <div id="navbar-close-div" onclick="closenavbar()"></div>
+    </div>
+    <!--corpo da home-->
     <div>
-        <!--navbar-->
-        <div class="topnav" id="myTopnav">
-            <a href="index.html" class="navbar-brand"><img src="pict/icon.png" style="width:100%" alt="logo"></a>
-            <a href="index.html">Página Inicial</a>
-            <a href="discipline.html">Disciplinas</a>
-            <a href="performance.html">Desempenho</a>
-            <a href="task.html">Tarefas</a>
-            <a href="hora.html">Horários</a>
-            <a href="material.html">Material</a> 
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-        </div>
-        <!--corpo da home-->
-        <div>
-            <h2>Minha galeria</h2>
-            <div class="row2">
-                <div class="column2">
-                        <img src="pict/img.jpg" class="img">
-                </div>
-                <div class="column2">
-                        <img src="pict/img.jpg" class="img">
-                </div>
-                <div class="column2">
-                        <img src="pict/img.jpg" class="img">
-                </div>
-                <div class="column2">
-                        <img src="pict/img.jpg" class="img">
-                </div>
+        <h2>Minha galeria</h2>
+        <div class="row2">
+            <div class="column2">
+                    <img src="pict/img.jpg" class="img">
             </div>
-            <br>
-            <a href="#" id="btn">Excluir</a>
-            <a href="#" id="upload">Upload</a>
+            <div class="column2">
+                    <img src="pict/img.jpg" class="img">
+            </div>
+            <div class="column2">
+                    <img src="pict/img.jpg" class="img">
+            </div>
+            <div class="column2">
+                    <img src="pict/img.jpg" class="img">
+            </div>
         </div>
+        <br>
+        <a href="#" id="btn">Excluir</a>
+        <a href="#" id="upload">Upload</a>
     </div>
     <script async src="js/nav.js"></script>
 </body>

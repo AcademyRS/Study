@@ -9,128 +9,131 @@
     <title>Study Life</title>
 </head>
 <body>
+    <!--Navbar-->
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="navbar-brand">
+            <img src="pict/icon.png" style="width:100%" alt="logo">
+        </a>
+        <a href="javascript:void(0);" class="icon" onclick="opennavbar()">&#9776;</a>
+    </div>
+    <div class="navbar" id="navbar">
+        <a href="index.html">Página Inicial</a>
+        <a href="discipline.html">Disciplinas</a>
+        <a href="performance.html">Desempenho</a>
+        <a href="task.html">Tarefas</a>
+        <a href="hora.html">Horários</a>
+        <a href="material.html">Material</a>
+        <div id="navbar-close-div" onclick="closenavbar()"></div>
+    </div>
+    <!--corpo da home-->
     <div>
-        <!--navbar-->
-        <div class="topnav" id="myTopnav">
-            <a href="index.html" class="navbar-brand"><img src="pict/icon.png" style="width:100%" alt="logo"></a>
-            <a href="index.html">Página Inicial</a>
-            <a href="discipline.html">Disciplinas</a>
-            <a href="performance.html">Desempenho</a>
-            <a href="task.html">Tarefas</a>
-            <a href="hora.html">Horários</a>
-            <a href="material.html">Material</a> 
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-        </div>
-        <!--corpo da home-->
-        <div>
-            <br><h2 class="h2c">Cronograma semanal</h2><br>
-            <table id="lugares">
-                <caption><h2>Manhã</h2></caption>
-                <thead>
-                    <tr><!--Cabeçalho-->
-                        <td class="dia">Seg</td>
-                        <td class="dia">Ter</td>
-                        <td class="dia">Qua</td>
-                        <td class="dia">Qui</td>
-                        <td class="dia">Sex</td>
-                        <td class="dia">Sáb</td>
-                        <td class="dia">Dom</td>
-                    </tr>
-                </thead>
-                <!--Manhã-->
-                    <tr>
-                        <td class="hora f4">Físc4</td>
-                        <td class="hora"></td>
-                        <td class="hora dbo">DBO</td>
-                        <td class="hora"></td>
-                        <td class="hora"></td>
-                        <td class="hora"></td>
-                        <td class="hora"></td>
-                    </tr>
-                    <tr>
-                        <td class="hora f4">Físc4</td>
-                        <td class="hora"></td>
-                        <td class="hora dbo">DBO</td>
-                        <td class="hora"></td>
-                        <td class="hora"></td>
-                        <td class="hora"></td>
-                        <td class="hora"></td>
-                    </tr>
-                    <tr>
-                        <td class="hora"></td>
-                        <td class="hora"></td>
-                        <td class="hora dbo">DBO</td>
-                        <td class="hora"></td>
-                        <td class="hora"></td>
-                        <td class="hora"></td>
-                        <td class="hora"></td>
-                    </tr>
-                    <tr>
-                        <td class="hora edf3">Ed.Fís3</td>
-                        <td class="hora"></td>
-                        <td class="hora dbo">DBO</td>
-                        <td class="hora edf3">Ed.Fís3</td>
-                        <td class="hora"></td>
-                        <td class="hora"></td>
-                        <td class="hora"></td>
-                    </tr>
-                </tbody>
-            </table>
-            <br><br>
-            <table id="lugares2">
-                <caption><h2>Tarde</h2></caption>
-                <thead>
-                    <tr><!--Cabeçalho-->
-                        <td class="dia">Seg</td>
-                        <td class="dia">Ter</td>
-                        <td class="dia">Qua</td>
-                        <td class="dia">Qui</td>
-                        <td class="dia">Sex</td>
-                        <td class="dia">Sáb</td>
-                        <td class="dia">Dom</td>
-                    </tr>
-                </thead>
-                <!--Tarde-->
-                <tbody>
-                    <tr>
-                        <td class="hora pt">Port3</td>
-                        <td class="hora es">Eng.S</td>
-                        <td class="hora mat">Mate3</td>
-                        <td class="hora bd">Banco</td>
-                        <td class="hora bd">Banco</td>
-                        <td class="hora"></td>
-                        <td class="hora"></td>
-                    </tr>
-                    <tr>
-                        <td class="hora pt">Port3</td>
-                        <td class="hora es">Eng.S</td>
-                        <td class="hora mat">Mate3</td>
-                        <td class="hora bd">Banco</td>
-                        <td class="hora bd">Banco</td>
-                        <td class="hora"></td>
-                        <td class="hora"></td>
-                    </tr>
-                    <tr>
-                        <td class="hora quim">Quim2</td>
-                        <td class="hora es">Eng.S</td>
-                        <td class="hora bio">Biol1</td>
-                        <td class="hora hist">Hist2</td>
-                        <td class="hora filo">Filo3</td>
-                        <td class="hora"></td>
-                        <td class="hora"></td>
-                    </tr>
-                    <tr>
-                        <td class="hora quim">Quim2</td>
-                        <td class="hora"></td>
-                        <td class="hora bio">Biol1</td>
-                        <td class="hora geo">Geog2</td>
-                        <td class="hora socio">Soci3</td>
-                        <td class="hora"></td>
-                        <td class="hora"></td>
-                    </tr>
-                </tbody>
-            </table>        
-        </div>
+        <br><h2 class="h2c">Cronograma semanal</h2><br>
+        <table id="lugares">
+            <caption><h2>Manhã</h2></caption>
+            <thead>
+                <tr><!--Cabeçalho-->
+                    <td class="dia">Seg</td>
+                    <td class="dia">Ter</td>
+                    <td class="dia">Qua</td>
+                    <td class="dia">Qui</td>
+                    <td class="dia">Sex</td>
+                    <td class="dia">Sáb</td>
+                    <td class="dia">Dom</td>
+                </tr>
+            </thead>
+            <!--Manhã-->
+                <tr>
+                    <td class="hora f4">Físc4</td>
+                    <td class="hora"></td>
+                    <td class="hora dbo">DBO</td>
+                    <td class="hora"></td>
+                    <td class="hora"></td>
+                    <td class="hora"></td>
+                    <td class="hora"></td>
+                </tr>
+                <tr>
+                    <td class="hora f4">Físc4</td>
+                    <td class="hora"></td>
+                    <td class="hora dbo">DBO</td>
+                    <td class="hora"></td>
+                    <td class="hora"></td>
+                    <td class="hora"></td>
+                    <td class="hora"></td>
+                </tr>
+                <tr>
+                    <td class="hora"></td>
+                    <td class="hora"></td>
+                    <td class="hora dbo">DBO</td>
+                    <td class="hora"></td>
+                    <td class="hora"></td>
+                    <td class="hora"></td>
+                    <td class="hora"></td>
+                </tr>
+                <tr>
+                    <td class="hora edf3">Ed.Fís3</td>
+                    <td class="hora"></td>
+                    <td class="hora dbo">DBO</td>
+                    <td class="hora edf3">Ed.Fís3</td>
+                    <td class="hora"></td>
+                    <td class="hora"></td>
+                    <td class="hora"></td>
+                </tr>
+            </tbody>
+        </table>
+        <br><br>
+        <table id="lugares2">
+            <caption><h2>Tarde</h2></caption>
+            <thead>
+                <tr><!--Cabeçalho-->
+                    <td class="dia">Seg</td>
+                    <td class="dia">Ter</td>
+                    <td class="dia">Qua</td>
+                    <td class="dia">Qui</td>
+                    <td class="dia">Sex</td>
+                    <td class="dia">Sáb</td>
+                    <td class="dia">Dom</td>
+                </tr>
+            </thead>
+            <!--Tarde-->
+            <tbody>
+                <tr>
+                    <td class="hora pt">Port3</td>
+                    <td class="hora es">Eng.S</td>
+                    <td class="hora mat">Mate3</td>
+                    <td class="hora bd">Banco</td>
+                    <td class="hora bd">Banco</td>
+                    <td class="hora"></td>
+                    <td class="hora"></td>
+                </tr>
+                <tr>
+                    <td class="hora pt">Port3</td>
+                    <td class="hora es">Eng.S</td>
+                    <td class="hora mat">Mate3</td>
+                    <td class="hora bd">Banco</td>
+                    <td class="hora bd">Banco</td>
+                    <td class="hora"></td>
+                    <td class="hora"></td>
+                </tr>
+                <tr>
+                    <td class="hora quim">Quim2</td>
+                    <td class="hora es">Eng.S</td>
+                    <td class="hora bio">Biol1</td>
+                    <td class="hora hist">Hist2</td>
+                    <td class="hora filo">Filo3</td>
+                    <td class="hora"></td>
+                    <td class="hora"></td>
+                </tr>
+                <tr>
+                    <td class="hora quim">Quim2</td>
+                    <td class="hora"></td>
+                    <td class="hora bio">Biol1</td>
+                    <td class="hora geo">Geog2</td>
+                    <td class="hora socio">Soci3</td>
+                    <td class="hora"></td>
+                    <td class="hora"></td>
+                </tr>
+            </tbody>
+        </table>        
     </div>
     <script async src="js/nav.js"></script>
 </body>

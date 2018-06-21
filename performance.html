@@ -9,19 +9,21 @@
         <title>Study Life</title>
     </head>
     <body>
-        <!--Header-->
-        <div>
-            <!--navbar-->
-            <div class="topnav" id="myTopnav">
-                <a href="index.html" class="navbar-brand"><img src="pict/icon.png" style="width:100%" alt="logo"></a>
-                <a href="index.html">Página Inicial</a>
-                <a href="discipline.html">Disciplinas</a>
-                <a href="performance.html">Desempenho</a>
-                <a href="task.html">Tarefas</a>
-                <a href="hora.html">Horários</a>
-                <a href="material.html">Material</a> 
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-            </div>
+        <!--Navbar-->
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="navbar-brand">
+                <img src="pict/icon.png" style="width:100%" alt="logo">
+            </a>
+            <a href="javascript:void(0);" class="icon" onclick="opennavbar()">&#9776;</a>
+        </div>
+        <div class="navbar" id="navbar">
+            <a href="index.html">Página Inicial</a>
+            <a href="discipline.html">Disciplinas</a>
+            <a href="performance.html">Desempenho</a>
+            <a href="task.html">Tarefas</a>
+            <a href="hora.html">Horários</a>
+            <a href="material.html">Material</a>
+            <div id="navbar-close-div" onclick="closenavbar()"></div>
         </div>
         <!--Body-->
         <div class="container">
