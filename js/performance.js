@@ -1,9 +1,11 @@
 let tablegrade = document.querySelector('#table-grade');
 if (localStorage['grade_table'] === undefined) {
-    localStorage.setItem('grade_table', JSON.stringify([]));
+    save();
 }
 
-window.onload = load();
+if (localStorage['grade_table'] !== undefined) {
+    window.onload = load();
+}
 
 tablegrade.addEventListener('click', function(e) {
     let td = e.target;
