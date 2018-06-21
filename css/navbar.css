@@ -1,0 +1,38 @@
+.navbar {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    float: right;
+    right: -100vw;
+    top: 0px;
+    background-color: #0AB67E;
+    overflow: hidden;
+    transition: 1000ms;
+    z-index: 1;
+}
+.navbar a {
+    position: relative;
+    width: 100%;
+    padding: 10px 10px 10px 16px; 
+    display: block;
+    top: 100px;
+}
+.navbar a, .navbar a:link, .navbar a:visited, .navbar a:hover, .navbar a:active {
+    text-decoration: none;
+    color: #ffffff;
+}
+.navbar div {
+    position: fixed;
+    top: 0px;
+    left: 100vw;
+    height: 100%;
+    width: calc(100vw - 200px);
+    transition: 1000ms;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+.navbar-open {
+    right: 0px;
+}
+.navbar-open div{
+    left: 0px;
+}

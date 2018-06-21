@@ -1,4 +1,9 @@
 let tablegrade = document.querySelector('#table-grade');
+if (localStorage['grade_table'] === undefined) {
+    localStorage.setItem('grade_table', JSON.stringify([]));
+}
+
+window.onload = load();
 
 tablegrade.addEventListener('click', function(e) {
     let td = e.target;
@@ -21,9 +26,28 @@ function createinput(td) {
     input.addEventListener('blur', function(e) {
         if ((input.value >= 0 && input.value <= 10) || input.value == '') {
             td.innerText = input.value;
+            save();
         } else {
             td.innerText = 10;
+            save();
         }
         input.remove();
     });
+}
+
+function save() {
+    let tdlist = document.querySelectorAll('#table-grade tbody tr td');
+    let info = [];
+    for (let cont = 0; cont < tdlist.length; cont++) {
+        info[cont] = tdlist[cont].innerText;
+    }
+    localStorage['grade_table'] = JSON.stringify(info);
+}
+
+function load() {
+    let tdlist = document.querySelectorAll('#table-grade tbody tr td');
+    let localS = JSON.parse(localStorage['grade_table']);
+    for (let cont = 0; cont < tdlist.length; cont++) {
+        tdlist[cont].innerText = localS[cont];
+    }
 }

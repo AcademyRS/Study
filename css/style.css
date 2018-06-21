@@ -4,11 +4,15 @@ html, body{margin: 0;padding: 0;font-family: "Segoe UI",Arial,sans-serif;}
 /* Inicio navbar */
 .topnav {
     overflow: hidden;
-    background-color: #084B60;
+    background-color: #0AB67E;
     box-shadow: 0 5px 8px rgba(0,0,0,0.4);
     -webkit-box-shadow: 0 5px 8px rgba(0,0,0,0.4);
     -moz-box-shadow: 0 5px 8px rgba(0,0,0,0.4);
     -o-box-shadow: 0 5px 8px rgba(0,0,0,0.4);
+}
+.body {
+    margin-left: 10%;
+    margin-right: 10%;
 }
 .topnav a {
     float: left;
@@ -21,7 +25,7 @@ html, body{margin: 0;padding: 0;font-family: "Segoe UI",Arial,sans-serif;}
 }
 .active {
     pointer-events:none;
-    background-color: rgba(8, 75, 96, 0.75);
+    background-color: #0AB67E;
     color: white;
 }
 .topnav .icon {
@@ -157,7 +161,7 @@ img.logo{width: 100%;}
 .c1{background-color:lightgray;width:100%;text-align:left;height:120px;}
 .c2{background-color:lightgray;width:100%;text-align:left;height:60px;}
 .topnav a:hover, .dropdown:hover .dropbtn {
-    background-color: #084B60;
+    background-color: #0AB67E;
     color: white;
 }
 .navbar-brand {
@@ -165,6 +169,7 @@ img.logo{width: 100%;}
 	margin-top: 0px;
     max-width: 77px;
     max-height: 55px;
+	background-color: #0AB67E;
 }   
 
 .dropdown-content a:hover {
@@ -179,20 +184,12 @@ img.logo{width: 100%;}
     .topnav a:not(:first-child), .dropdown .dropbtn {display: none;}
     .topnav a.icon {float: right; display: block;}
 }
-@media screen and (max-width: 700px) {
-    .topnav.responsive {position: relative;}
-    .topnav.responsive .icon {position: absolute; right: 0; top: 0;}
-    .topnav.responsive a {float: none; display: block; text-align: left;}
-    .topnav.responsive .dropdown {float: none;}
-    .topnav.responsive .dropdown-content {position: relative;}
-    .topnav.responsive .dropdown .dropbtn {display: block; width: 100%; text-align: left;}
-}
 
 /* Home */
 /* Clear floats after the columns */
 .column {
     color: black;
-    background-color: #81BEF7; 
+    background-color: #28D79E; 
     border-width: 5px;
     border: solid white;
     float: left;
@@ -229,6 +226,128 @@ img.logo{width: 100%;}
 }
 
 /* tarefas */
+h2#head{text-align: center;}
+button#icone_mais{
+    width: 5vw;
+    height: 5vw;
+    border: none;
+    background: url('../pict/icone_mais.png');
+    background-repeat: no-repeat;
+    transition: all 0.8s;
+    background-size: 100%;  
+    position: relative;
+    margin-top: 50px;
+    left: 89.5vw;
+}
+div.generation{
+    position: absolute;
+    width: 80%;
+    top: 25%;
+    left: -100%;
+    transition: all 0.9s;
+    background: rgb(236, 236, 236);
+    box-shadow: 0px 0px 90px white;
+    border-radius: 10px;
+}
+div.generation p,input{margin: 0px;text-align: center;}
+div.generation input{background: white;width: 80%;margin-left: 10%;}
+button.ready, button.deny{margin: 0px;margin-top: 15px;width: 25%;height: 6vw;color: white; margin-bottom: 10px;font-size: 30px;}
+button.ready {margin-left: 25%;background: green;border-radius: 8px;text-align: center;}
+button.deny{background: rgb(150, 0, 0);border-radius: 8px;color: white;}
+p.warning{color: red;font-size: 15px;}
+div.body{width: 90%;margin-left: 5%;transition: all 0.8s;}
+ul.job{padding: 0px;margin: 0px;font-size: 4vw;color: grey;
+    width: 100%;
+    transition: 0.3s;
+    height: 15vw;
+}
+p.name_job{
+    max-width: 40%;
+    height: 100%;
+    transform: translateY(30%); 
+    margin: 0px;
+    margin-right: 5%;
+}
+button.description_job{
+    background: url('../pict/icone_vermais.png');
+    border: none;
+    background-size: 100%;  
+    width: 6vw;
+    background-repeat: no-repeat;
+    height: 6vw;
+    float: right;
+    right: -56%;
+    outline: none;
+    margin-right: 5px;
+    position: relative;
+    top: -70%;
+}
+div.second_job{
+    width: 55%;
+    height: 100%;
+    font-size: 3vw;
+    position: relative;
+    right: 6vw;
+    transform: translateY(20%); 
+    top: -100%;
+    float: right;
+}
+p.date_job{
+    margin: 0px;
+    text-align: center;
+}
+p.matter_job{
+    margin: 0px;
+    text-align: center
+}
+p.name_job{ 
+    color: black;
+}
+p.description_job{
+    width: 80%;
+    max-height: 100px;
+    overflow: auto;
+    font-size: 2vw;
+    display: none;
+    position: relative;
+    top: -100%;
+    margin: 0px;
+    margin-left: 10%;
+}
+button.delete{
+    width: 5vw;
+    height: 5vw;
+    border: none;
+    background: url('../pict/icone_lixo.png');
+    background-repeat: no-repeat;
+    transition: all 0.8s;
+    background-size: 100%;  
+    position: relative;
+    left: 95%;
+    margin-top: 30px;
+    transform: translateX(70%);
+    display: none;
+}
+@media (max-width: 1000px){
+    button.ready,button.deny{margin: 0px;margin-top: 15px;width: 20%;height: 6vw;font-size: 25px;margin-bottom: 10px;}
+    button.ready {margin-left: 30%;}
+}
+@media (max-width: 770px){
+    button#icone_mais{width: 5vh;height: 5vh;}
+    button.ready,button.deny{margin: 0px;margin-top: 15px;width: 15%;height: 6vw;font-size: 20px;margin-bottom: 10px;}
+    button.ready {margin-left: 35%;}
+}
+@media (max-width: 575px){
+    button.ready,button.deny{margin: 0px;margin-top: 15px;width: 20%;height: 8vw;font-size: 20px;margin-bottom: 10px;font-size: 13px}
+    button.ready {margin-left: 30%;}
+    p.description_job{font-size: 3vw;}
+}
+
+/* galeria */
+
+
+/* Home */
+* {box-sizing: border-box;}
 /* Clear floats after the columns */
 .column2 {
     color: black;
@@ -280,16 +399,17 @@ img.logo{width: 100%;}
     text-align:left;
     height:220px;
 }
+.discipline {margin: 0 5px 0 5px;}
 #title {text-align: center;}
 .container {
     margin: auto;
     height: 80%;
-    width: 100%;
 }
 #BoxForm {
     float: right;
     max-width: 300px;
-    margin: 5px 30px;
+    margin: 20px;     
+    padding: 10px 0 20px 10px;  
     background:#fff;    
     border: 1px solid #dcdcdc;
 }    
@@ -300,31 +420,28 @@ img.logo{width: 100%;}
     clear: both;
 }
 #form label {  
-    margin: 0px 0; 
-    margin-right: 40px;    
+    margin: 0px 0;     
     line-height: 45px;
     text-align: left;     
     float: left;     
     color: #666;
     font-size: 18px; 
 }
-.disc {
-    padding: 2px 10px;
+.disc {     
+    padding: 5px;     
     border: 1px solid #CCCCCC;     
-    background:#fcfcfc;
+    background:#fcfcfc;     
+    border-radius: 5px;
     font-size: 16px;
 }
-input.disc {
-    padding: 5px;
-}
 #btn {     
-    width: 100px;     
+    width: 120px;     
     height: 50px; 
     cursor: pointer;
     margin-top: 10px;
     font-size: 16px;     
     color:#f6f6f6;     
-    background:#084B60;     
+    background:#0AB67E;     
     border: 1px solid #ccc; 
 }
 .arrow {
