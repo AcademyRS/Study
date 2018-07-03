@@ -1,6 +1,6 @@
 #BoxForm {
     z-index: 3;
-    position: absolute;
+    position: fixed;
     float: none;
     transition: all 400ms linear;
     transform: translate(-120%, 0);
@@ -20,7 +20,19 @@
 #opac {
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 2;
-    position: absolute;
+    position: fixed;
     top: 0;
+    width: 100vw;
+    height: 100vh;
+    animation-name: divopen;
+    animation-duration: 1000ms;
 }
 .discipline {margin: 0 15px 0 15px;}
+@keyframes divopen {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
