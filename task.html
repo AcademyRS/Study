@@ -24,8 +24,8 @@
         <a href="task.html">Tarefas</a>
         <a href="hora.html">Horários</a>
         <a href="material.html">Material</a>
+        <div id="navbar-close-div" onclick="closenavbar()"></div>
     </div>
-    <div class="navbar-close-div" id="navbar-close-div" onclick="closenavbar()"></div>
     <!--Body-->
     <h2 id="head">Suas tarefas</h2>
     <div class="container">
@@ -46,7 +46,7 @@
                     </li>
                     <li>
                         <label>Descrição da tarefa:</label>
-                        <textarea class="disc description" cols="21" rows="5"></textarea>
+                        <textarea class="disc description" cols="21" rows="4"></textarea>
                     </li>
                     <li><button id="btn">Adicionar</button></li>
                 </ul>
@@ -54,7 +54,6 @@
         </div>
     </div>
     <div class="task"></div>
-    <div class="body"></div>
     <button id="add"></button>
     <script async src="js/navbar.js"></script>
     <script async src="js/task.js"></script>
