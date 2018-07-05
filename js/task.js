@@ -1,116 +1,77 @@
 const boxForm = document.querySelector('#BoxForm');
-const divTask = document.querySelector ('.task');
+const divTask = document.querySelector('.task');
 let add = document.querySelector ('#add');
-let nav = document.querySelector('.topnav');
-let logo = document.querySelector ('.navbar-brand');
 let ready = document.querySelector('#btn');
-let body = document.querySelector('.body');
 let div = document.createElement('div');
-div.setAttribute('id', 'opac');
-let auxiliar = '';
-let open = 0;
-let rotate = 180;
+div.setAttribute('class','backBlack');
 
-boxForm.addEventListener ('click', function (event) {event.stopPropagation();})
 add.addEventListener ('click', function (event) {
-    event.stopPropagation();
     add.style.opacity = '0';
     div.style.width = window.innerWidth + 'px';
     div.style.height =  window.innerHeight + 'px';
+    document.querySelector('body').style.marginBottom =  '15px';
     document.body.appendChild(div);
     boxForm.classList.add('open');
-    open = 1;
-    logo.href = '#';
-    divTask.classList.add('left');
-    body.style.display = 'none';
+});
+
+div.addEventListener ('click', function () {
+    add.style.opacity = '1';
+    boxForm.classList.remove('open');
+    document.body.removeChild(div);
 });
 
 ready.addEventListener ('click', function (e) {
     e.preventDefault();
-    document.body.removeChild(document.querySelector('#opac'));
-    console.log(document.querySelector('#opac'))
     let name = document.querySelector('.name').value;
     let date =  document.querySelector('.date').value;
     let matter =  document.querySelector('.matter').value;
-    let text = document.querySelector('.description').value;
+    let description = document.querySelector('.description').value;
 
-    if (name != '' && date != '' && matter != '' && text != '') {Create(name,date,matter,text);}
-    boxForm.classList.remove('open');
+    if (name != '' && date != '' && matter != '' && description != '') Create(name, date, matter, description);
     add.style.opacity = '1';
-    open = 0;
-    logo.href = 'index.html';
-    divTask.classList.remove('left');
-    document.body.style.background = 'white';
-    body.style.display = 'block';
+    boxForm.classList.remove('open');
+    document.body.removeChild(div);
 });
 
-document.body.addEventListener ('click', function () {
-    boxForm.classList.remove('open');
-    document.body.removeChild(document.querySelector('#opac'));
-    add.style.opacity = '1';
-    open = 0;
-    logo.href = 'index.html';
-    divTask.classList.remove('left');
-    document.body.style.background = 'white';
-    body.style.display = 'block';
-    event.stopPropagation();
-});
-Create ('nome','17/01/2001','nsei','ass')
-Create ('ndasdsaome','17/01/2001','nsei','asdasdsas')
+Create('sas','17/01/2001','amtematica' ,'sda');
+Create('dasdsa','17/01/2001','dsad','dsadasdas');
+Create('ssdadsaas','17/01/2001','amtesdadsmatica','ddas');
 
 function Create (name, date, matter, description) {
-    var a, b, c;
-    a = document.createElement('ul');
-    a.setAttribute('class', 'job job' + ( document.getElementsByClassName('job').length + 1) + '');
-    b = document.createElement('p');b.setAttribute('class', 'name_job');
-    b.innerText = (name.slice(0, 1)).toUpperCase() + name.slice(1, name.length);
-    a.appendChild(b);
-    b = document.createElement('button');b.setAttribute('class', 'description_job');
-    b.value = description;
-    b.addEventListener ('click', More);
-    a.appendChild(b);
-    c = document.createElement('div');c.setAttribute('class', 'second_job');
-    b = document.createElement('p');b.setAttribute('class', 'date_job');
-    b.innerText= date.slice(8,10) + "/" + date.slice(5,7) + "/" + date.slice(0,4);
-    c.appendChild(b);
-    b = document.createElement('p');b.setAttribute('class', 'matter_job');
-    b.innerText=matter;c.appendChild(b);b = document.createElement('button');
-    b.setAttribute('class', 'delete');
-    c.appendChild(b);
-    a.appendChild(c);
-    divTask.appendChild(a);
-
-    document.querySelector('.name').value = '';
-    document.querySelector('.date').value = '';
-    document.querySelector('.matter').value = '';
-    document.querySelector('.description').value = '';
+    let div = document.createElement('div');div.setAttribute('id','task');
+    let p  = document.createElement('p');
+    p.innerText = (name.slice(0, 1)).toUpperCase() + name.slice(1, name.length);p.setAttribute('id','name');
+    div.appendChild(p);
+    let pa = document.createElement('p');pa.setAttribute('id','btn2');
+    divTask.appendChild(div);
+    let second = document.createElement('div');second.setAttribute('id','second');
+    p = document.createElement('p');
+    p.innerText = date.slice(8,10) + date.slice(4,8) + date.slice(0,4);
+    second.appendChild(p);
+    p = document.createElement('p');p.innerText = matter;
+    second.appendChild(p);
+    pa.setAttribute('data-value', '180');
+    pa.addEventListener('click', function (evento) {
+        div.style.top = '0px';
+        div.style.transition = 'all 600ms';
+        if (pa.getAttribute('data-value') === '0') {
+            pa.style.transform = 'rotate(180deg)';
+            pa.setAttribute('data-value', '180');
+            p.style.opacity = '0';
+            p.style.height = '0px';
+            p.style.margin = '0px';
+        } else { 
+            pa.style.transform = 'rotate(0deg)';
+            pa.setAttribute('data-value', '0');
+            p.style.opacity = '1';
+            p.style.height = '18px';
+            p.style.margin = '16px 0';
+        }
+    });
+    div.appendChild(pa);
+    div.appendChild(second);
+    p = document.createElement('p');p.innerText = description;
+    div = document.createElement('div');div.setAttribute('id','sad');
+    div.appendChild(p);
+    divTask.appendChild(div);
 }
-function More (evento) {
-    evento.stopPropagation();
-    if (evento.target.className ==='description_job') {
-        if (rotate === 180){
-            evento.target.style.transform = 'rotate(0deg)';
-            rotate = 0;
-            a = document.createElement('div');
-            a.setAttribute('class', 'descrip');
-            b = document.createElement('p');
-            b.innerText = evento.target.value;
-            a.appendChild(b);
-            body.appendChild(a);
-            body.style.transform = 'translate(0, 0)';
-        } else {
-            evento.target.style.transform = 'rotate(180deg)';
-            setTimeout(function () {body.removeChild(body.childNodes[0]);}, 200);
-            body.style.transform = 'translate(0, -100%)';
-            rotate = 180;
-        }
-    }
-    if(evento.target.className=='delete'){
-        var a = event.target.parentElement.parentElement;
-        for (var i = 0;i<4;i++){
-            a.removeChild(a.children[0]);
-        }
-        body.removeChild(a);
-        auxiliar = '';
-    }
-};
