@@ -17,7 +17,7 @@ html, body{
 	left: 50%;
 	transform: translate(-50%);
 	margin: 0;
-	color: #002418;
+	color: #28d79e;
 }
 /*Table*/
 #h2-frequenc{
@@ -89,7 +89,7 @@ html, body{
 	transform: translate(-50%);
 }
 .graphic-background{
-	background-color: #015D3F;
+	background-color: #d0d0d0;
 	position: absolute;
 	width: 100px;
 	height: 100px;
@@ -124,7 +124,7 @@ html, body{
 }
 
 #graphic-slice .slice{
-	background-color: #28D79E;
+	background-color: #28d79e;
 	-webkit-transform:rotate(150deg);
 	-moz-transform:rotate(150deg);
 	-o-transform:rotate(150deg);
@@ -134,7 +134,7 @@ html, body{
 	width: 80px;
     height: 80px;
     border-radius: 50%;
-    background-color: #002418;
+    background-color: #ffffff;
     z-index: 0;
     position:  relative;
     top: 50%;
@@ -145,7 +145,7 @@ html, body{
 	font-family: Arial, sans-serif;
 	font-size: 175%;
 	text-align: center;
-	color: #0AB67E;
+	color: #28d79e;
 	margin: 0;
 	z-index: 2;
 	position: relative;
