@@ -16,10 +16,10 @@ add.addEventListener ('click', function (event) {
     boxForm.classList.add('open');
 });
 
-div.addEventListener ('click', function () {
-    boxForm.classList.remove('open');
-    // document.body.removeChild(div);
-});
+// div.addEventListener ('click', function () {
+//     boxForm.classList.remove('open');
+//     document.body.removeChild(div);
+// });
 
 btn.addEventListener ('click', function (e) {
     e.preventDefault();
