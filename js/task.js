@@ -13,11 +13,11 @@ add.addEventListener ('click', function (event) {
     boxForm.classList.add('open');
 });
 
-div.addEventListener ('click', function () {
-    add.style.opacity = '1';
-    boxForm.classList.remove('open');
-    // document.body.removeChild(div);
-});
+// div.addEventListener ('click', function () {
+//     add.style.opacity = '1';
+//     boxForm.classList.remove('open');
+//     document.body.removeChild(div);
+// });
 
 ready.addEventListener ('click', function (e) {
     e.preventDefault();
