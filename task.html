@@ -10,7 +10,6 @@
     <title>Study Life</title>
 </head>
 <body>
-    <!--Navbar-->
     <div class="topnav" id="myTopnav">
         <a href="index.html" class="navbar-brand">
             <img src="pict/icon.png" style="width:100%" alt="logo">
@@ -26,31 +25,18 @@
         <a href="material.html">Material</a>
         <div id="navbar-close-div" onclick="closenavbar()"></div>
     </div>
-    <!--Body-->
-    <h2 id="head">Suas tarefas</h2>
+    <h2 class="head">Suas tarefas</h2>
     <div class="container">
         <div id="BoxForm">
-            <form id="form">
-                <ul>                      
-                    <li>
-                        <label>Nome da tarefa:</label>
-                        <input type="text" class="disc name" required/>
-                    </li>
-                    <li>
-                        <label>Data:</label> 
-                        <input type="date" class="disc date" id="date" required/>
-                    </li>
-                    <li>
-                        <label>Nome da matéria:</label>
-                        <input type="text" class="disc matter" required>
-                    </li>
-                    <li>
-                        <label>Descrição da tarefa:</label>
-                        <textarea class="disc description" cols="21" rows="4"></textarea>
-                    </li>
-                    <li><button id="btn">Adicionar</button></li>
-                </ul>
-            </form>
+            <label>Nome da tarefa:</label>
+            <input type="text" class="disc" name="name" placeholder="Tarefa" required/>
+            <label>Nome da matéria:</label>
+            <input type="text" class="disc" name="matter" placeholder="Matéria" required>
+            <label>Data:</label> 
+            <input type="date" class="disc" name="date" id="date" required/>
+            <label>Descrição da tarefa:</label>
+            <textarea class="disc description" placeholder="Descrição"></textarea>
+            <button id="btn">Adicionar</button>
         </div>
     </div>
     <div class="task"></div>

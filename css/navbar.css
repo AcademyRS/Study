@@ -8,7 +8,7 @@
     background-color: #0AB67E;
     overflow: hidden;
     transition: 1000ms;
-    z-index: 2;
+    z-index: 4;
 }
 .navbar a {
     position: relative;
