@@ -1,5 +1,4 @@
 const boxForm = document.querySelector('#BoxForm');
-boxForm.style.transform = 'translate(-120%,0)';
 const divTask = document.querySelector('.task');
 let add = document.querySelector ('#add');
 let ready = document.querySelector('#btn');
@@ -28,6 +27,7 @@ ready.addEventListener ('click', function (e) {
     let description = document.querySelector('.description').value;
     if (name != '' && date != '' && matter != '' && description != '') Create(name, date, matter, description);
     add.style.opacity = '1';
+    boxForm.style.transition = 'all 400ms linear';
     boxForm.classList.remove('open');
     // document.body.removeChild(div);
 });
