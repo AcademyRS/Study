@@ -40,7 +40,7 @@
     resize: none;
 }
 #btn { float: right;margin-top: 10px;}
-label { float: left;min-width: 70px;}
+label { float: left;min-width: 70px;height: 29px;}
 input, label { max-width: 150px;margin-bottom: 10px;padding: 5px;}
 input { width: 50%;}
 .disc { float: right;}
