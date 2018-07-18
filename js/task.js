@@ -1,4 +1,5 @@
 const boxForm = document.querySelector('#BoxForm');
+boxForm.style.transform = 'translate(-120%,0)';
 const divTask = document.querySelector('.task');
 let add = document.querySelector ('#add');
 let ready = document.querySelector('#btn');
