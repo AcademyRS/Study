@@ -45,7 +45,7 @@ input, label { max-width: 150px;margin-bottom: 10px;padding: 5px;}
 input { width: 50%;}
 .disc { float: right;}
 input.disc { border: 2px solid rgba(0,0,0,0.1);}
-input[type="date"] { opacity: 0.8;}
+input[type="date"] { opacity: 0.8;margin-bottom: 5px;}
 textarea.disc { border: 2px solid rgba(0,0,0,0.1);}
 #task {
     background-color: #99efd4;
