@@ -1,6 +1,7 @@
 const boxForm = document.querySelector('#BoxForm');
 const divTask = document.querySelector('.task');
-let add = document.querySelector ('#add');
+const adddiv = document.querySelector('#add-div');
+let add = document.querySelector('#add');
 let ready = document.querySelector('#btn');
 // let div = document.createElement('div');
 // div.setAttribute('class','backBlack');
@@ -11,6 +12,7 @@ add.addEventListener ('click', function (event) {
     document.querySelector('body').style.marginBottom =  '15px';
     // document.body.appendChild(div);
     boxForm.classList.add('open');
+    adddiv.className += ' add-div-open';
 });
 
 // div.addEventListener ('click', function () {
@@ -35,6 +37,13 @@ ready.addEventListener ('click', function (e) {
 Create('sas','2013/07/02','Matemática' ,'sda');
 Create('dasdsa','2013/07/02','dsad','dsadasdas');
 Create('ssdadsaas','2013/07/02','amtesdadsmatica','ddas');
+
+function closeadddiv() {
+    add.style.opacity = '1';
+    boxForm.classList.remove('open');
+    boxForm.style.transition = 'all 400ms linear';
+    adddiv.className = 'add-div';
+}
 
 function Create (name, date, matter, description) {
     let div = document.createElement('div');div.setAttribute('id','task');
