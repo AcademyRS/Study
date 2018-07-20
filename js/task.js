@@ -13,6 +13,7 @@ add.addEventListener ('click', function (event) {
     // document.body.appendChild(div);
     boxForm.classList.add('open');
     adddiv.className += ' add-div-open';
+    closeadddiv();
 });
 
 // div.addEventListener ('click', function () {
