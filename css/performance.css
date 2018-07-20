@@ -10,35 +10,30 @@ html, body{
 	margin: 0;
 	padding: 0;
 }
-.container h2:not(.pag-title) {
+.container h2 {
 	position: relative;
 	display: table;
-	top: 50px;
+	top: 19.92px;
 	left: 50%;
 	transform: translate(-50%);
 	margin: 0;
-	color: #28d79e;
-}
-.pag-title {
-	text-align: center;
-	margin-bottom: -30px;
 }
 /*Table*/
 #h2-frequenc{
-	top: 100px;
+	top: 50px;
 }
 #h2-grade{
-	top: 110px;
+	top: 60px;
 }
 .container table{
 	position: relative;
-	top: 100px;
+	top: 50px;
 	left: 50%;
 	transform: translate(-50%);
 	font-size: 15px;
 }
 #table-grade{
-	top: 110px;
+	top: 60px;
 }
 .container table, .container thead, .container tbody{
 	display: table;
@@ -87,7 +82,7 @@ html, body{
 	height: 100px;
 	width: 100px;
 	position: relative;
-	top: 50px;
+	top: 20px;
 	left: 50%;
 	margin: 15px 0 0 0;
 	transform: translate(-50%);
