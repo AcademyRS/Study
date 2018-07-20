@@ -3,32 +3,20 @@ const boxForm = document.querySelector('#BoxForm');
 const adddiv = document.querySelector('#add-div');
 let add = document.querySelector('#add');
 let btn = document.querySelector('#btn');
-// let div = document.createElement('div');
-// div.setAttribute('class','backBlack');
-
 
 boxForm.addEventListener('click', function(event) {
     event.stopPropagation();
 });
 add.addEventListener('click', function(event) {
     event.preventDefault();
-    // div.style.width = window.innerWidth + 'px';
-    // div.style.height =  window.innerHeight + 'px';
     document.querySelector('body').style.marginBottom = '15px';
-    // document.body.appendChild(div);
     boxForm.classList.add('open');
     adddiv.className += ' add-div-open';
 });
 
-// div.addEventListener ('click', function () {
-//     boxForm.classList.remove('open');
-//     document.body.removeChild(div);
-// });
-
 btn.addEventListener('click', function(e) {
     e.preventDefault();
     boxForm.classList.remove('open');
-    // document.body.removeChild(div);
     create();
 
     document.querySelector('input[type=text][name=discipline]').value = '';
