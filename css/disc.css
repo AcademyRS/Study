@@ -43,31 +43,3 @@ input.disc { border: 2px solid rgba(0,0,0,0.1);}
     max-width: 500px;
     margin: auto;
 }
-.add-div {
-    position: fixed;
-    top: 0px;
-    height: 100vh;
-    width: 100vw;
-    transition: 400ms linear;
-    background-color: rgba(0, 0, 0, 0.25);
-    z-index: 1;
-    display: none;
-    animation-name: divclose;
-    animation-duration: 400ms;
-    opacity: 0;
-}
-.add-div-open {
-    display: block;
-    transition: 400ms linear;
-    animation-name: divopen;
-    animation-duration: 400ms;
-    opacity: 1;
-}
-@keyframes divopen {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
