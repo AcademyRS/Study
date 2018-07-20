@@ -34,6 +34,7 @@ btn.addEventListener('click', function(e) {
     document.querySelector('input[type=text][name=discipline]').value = '';
     document.querySelector('input[type=text][name=prof]').value = '';
     document.querySelector('input[type=number][name=sala]').value = '';
+    closeadddiv();
 });
 
 function closeadddiv() {
