@@ -3,24 +3,14 @@ const divTask = document.querySelector('.task');
 const adddiv = document.querySelector('#add-div');
 let add = document.querySelector('#add');
 let ready = document.querySelector('#btn');
-// let div = document.createElement('div');
-// div.setAttribute('class','backBlack');
+
 add.addEventListener ('click', function (event) {
     add.style.opacity = '0';
-    // div.style.width = window.innerWidth + 'px';
-    // div.style.height =  window.innerHeight + 'px';
     document.querySelector('body').style.marginBottom =  '15px';
-    // document.body.appendChild(div);
     boxForm.classList.add('open');
     adddiv.className += ' add-div-open';
     closeadddiv();
 });
-
-// div.addEventListener ('click', function () {
-//     add.style.opacity = '1';
-//     boxForm.classList.remove('open');
-//     document.body.removeChild(div);
-// });
 
 ready.addEventListener ('click', function (e) {
     e.preventDefault();
@@ -32,7 +22,6 @@ ready.addEventListener ('click', function (e) {
     add.style.opacity = '1';
     boxForm.style.transition = 'all 400ms linear';
     boxForm.classList.remove('open');
-    // document.body.removeChild(div);
 });
 
 Create('sas','2013/07/02','Matemática' ,'sda');
